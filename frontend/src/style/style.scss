@@ -1,0 +1,116 @@
+@import 'reset';
+$lightColor: #33b67b;
+$darkColor: #242d38;
+$txtColor: #a1a199;
+$dirtyWhyte: #ebe9e9;
+$lightText: #ceb10c;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $lightColor;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightColor;
+  height: 100vh; 
+  
+  
+  .headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    margin-bottom: 70px;
+
+    h2 {
+      color: $dirtyWhyte;
+      margin-right: 30px;
+    }
+  }
+
+  .App-square {
+    width: 80%;
+    height: 60vh;
+    background-color: black;
+    padding: 25px;
+    color: $dirtyWhyte;
+
+    h3{
+      color: $lightText;
+      margin-bottom: 10px;
+    }
+
+    p {
+      line-height: 1.5em;
+    }   
+  } 
+}
+
+.readmore {
+  color: #ceb10c;
+  text-align: right;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.App-square-light {
+  width: 80%;
+height: 60vh;
+background-color: $dirtyWhyte;
+padding: 25px;
+color: black;
+h3{
+  color: $lightText;
+  margin-bottom: 10px;
+}
+p {
+  line-height: 1.5em;
+}   
+}
+
+@media screen and (min-width: 50em) {
+  .App {
+    flex-direction: row;
+    padding: 3em;
+  }
+}
+
+
+@media screen and (min-width: 50em) {
+  .App-square {
+    width: 90%;
+    height: 90%;
+}
+}
+
+
+.App-main {
+  margin: 0 2em 0 2em;
+}
+
+@media screen and (min-width: 50em) {
+  .App-main {
+   display:flex;
+   flex-direction: column;
+    align-content: flex-end;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+}
+}
+
+.App-main-title {
+  align-items: left;
+}
+
+
+
+
+.App-main-more {
+  text-transform: uppercase;
+  letter-spacing: .8rem;
+}
